@@ -8,7 +8,11 @@ curl -sLf https://raw.githubusercontent.com/gaunthan/zed-sdk-installer/master/in
 
 # Install zed-ros-wrapper
 cd ../src
-git clone https://github.com/stereolabs/zed-ros-wrapper.git
+if [ ! -d zed-ros-wrapper ]; then
+    git clone https://github.com/stereolabs/zed-ros-wrapper.git
+else
+    git pull
+fi
 cd ../
 catkin_make
 source ./devel/setup.bash
