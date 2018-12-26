@@ -35,7 +35,11 @@ cd "$curr_dir"
 
 # Install ORB_SLAM2
 cd ../src
-git clone https://github.com/gaunthan/ORB_SLAM2
+if [ ! -d ORB_SLAM2 ]; then
+    git clone https://github.com/gaunthan/ORB_SLAM2
+else
+    git pull
+fi
 cd ORB_SLAM2
 chmod +x build.sh build_ros.sh
 ./build.sh
