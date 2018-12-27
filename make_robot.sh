@@ -1,8 +1,9 @@
 #!/usr/bin/env sh
 
+mkdir -p src
+
 # Install all deps.
 ./install/install_all.sh
 
 # Make catkin workspace
-mkdir -p src
 catkin_make
