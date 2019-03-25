@@ -3,7 +3,9 @@
 mkdir -p src
 
 # Install all deps.
-./install/install_all.sh
+cd ./install
+./install_all.sh
+cd -
 
 # Make catkin workspace
 catkin_make

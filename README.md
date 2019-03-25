@@ -1,13 +1,13 @@
 # visual-robot
 Building visual robot with ORB_SLAM2, ZED and Turtlebot2 on Ubuntu melodic.
 
-## System require
+## System requirements
 
 - Ubuntu 18
 - x86_64
 - Nvidia GPU
 
-## How to use
+## Usage
 Clone this repo and run `make_robot.sh`:
 
     git clone https://github.com/gaunthan/visual-robot.git
