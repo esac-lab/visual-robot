@@ -8,4 +8,6 @@
 
 ./install_zed.sh
 
+./install_kinect.sh
+
 ./install_turtlebot2.sh
