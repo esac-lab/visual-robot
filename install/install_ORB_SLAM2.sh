@@ -44,4 +44,3 @@ cd ORB_SLAM2
 chmod +x build.sh build_ros.sh
 ./build.sh
 ./build_ros.sh
-echo 'export ROS_PACKAGE_PATH=${ROS_PACKAGE_PATH}:'"`pwd`/Examples/ROS" >> ~/.bashrc
