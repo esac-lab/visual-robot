@@ -9,4 +9,6 @@ compile_commands.json
 CTestTestfile.cmake
 devel/
 build/
+logs/
 .catkin_workspace
+.catkin_tools
