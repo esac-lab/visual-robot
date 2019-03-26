@@ -26,7 +26,7 @@ if [ "$1" = "enable_core" ]; then
   fi
 elif [ "$1" = "enable_zed" ]; then
   source ./devel/setup.bash
-  roslaunch zed_wrapper zed.launch
+  roslaunch zed_wrapper zed_camera.launch
 elif [ "$1" = "enable_kinect" ]; then
   roslaunch openni_launch openni.launch
 elif [ "$1" = "enable_turtlebot" ]; then
@@ -37,6 +37,7 @@ elif [ "$1" = "enable_turtlebot_keyboard" ]; then
   roslaunch turtlebot_teleop keyboard_teleop.launch
 elif [ "$1" = "enable_stereo_slam" ]; then
   export ROS_PACKAGE_PATH=${ROS_PACKAGE_PATH}:`pwd`/src/ORB_SLAM2/Examples/ROS
+  # Use correspondent zed_xxx.yaml according to src/zed-ros-wrapper/zed_wrapper/launch/zed_camera.launch
   rosrun ORB_SLAM2 Stereo ./src/ORB_SLAM2/Vocabulary/ORBvoc.txt ./src/ORB_SLAM2/Examples/ROS/ORB_SLAM2/ZED_VGA.yaml false
 elif [ "$1" = "enable_rgbd_slam" ]; then
   export ROS_PACKAGE_PATH=${ROS_PACKAGE_PATH}:`pwd`/src/ORB_SLAM2/Examples/ROS
