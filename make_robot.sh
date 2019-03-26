@@ -10,6 +10,7 @@ cd -
 # Update zed-ros-wrapper
 cd src/zed-ros-wrapper
 git pull
+cd -
 
 # Build other packages
 catkin_make
