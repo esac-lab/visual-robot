@@ -1,10 +1,15 @@
 #!/usr/bin/env sh
 
-# Build ORB_SLAM
+# Update and build ORB_SLAM
 cd src/ORB_SLAM2
+git pull
 ./build.sh
 ./build_ros.sh
 cd -
+
+# Update zed-ros-wrapper
+cd src/zed-ros-wrapper
+git pull
 
 # Build other packages
 catkin_make
