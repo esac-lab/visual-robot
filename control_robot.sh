@@ -11,6 +11,7 @@ print_help()
   echo "      - enable_turtlebot"
   echo "      - enable_turtlebot_keyboard"
   echo "      - enable_stereo_slam"
+  echo "      - enable_rgbd_slam"
 }
 
 if [ "$#" -lt "1" ]; then
@@ -37,6 +38,9 @@ elif [ "$1" = "enable_turtlebot_keyboard" ]; then
 elif [ "$1" = "enable_stereo_slam" ]; then
   export ROS_PACKAGE_PATH=${ROS_PACKAGE_PATH}:`pwd`/src/ORB_SLAM2/Examples/ROS
   rosrun ORB_SLAM2 Stereo ./src/ORB_SLAM2/Vocabulary/ORBvoc.txt ./src/ORB_SLAM2/Examples/ROS/ORB_SLAM2/ZED_VGA.yaml false
+elif [ "$1" = "enable_rgbd_slam" ]; then
+  export ROS_PACKAGE_PATH=${ROS_PACKAGE_PATH}:`pwd`/src/ORB_SLAM2/Examples/ROS
+  rosrun ORB_SLAM2 RGBD ./src/ORB_SLAM2/Vocabulary/ORBvoc.txt src/ORB_SLAM2/Examples/RGB-D/TUM1.yaml
 else
   echo "Unsupported action: $1"
 fi
