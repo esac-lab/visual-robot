@@ -1,15 +1,3 @@
-#!/usr/bin/env sh
+#!/usr/bin/env bash
 
 curl -sLf https://raw.githubusercontent.com/gaunthan/Turtlebot2-On-Melodic/master/build_basic.sh | bash
-
-# Install turtlebot exploration 3d
-cd ./src
-if [ ! -d turtlebot_exploration_3d ]; then
-  git clone https://github.com/gaunthan/turtlebot_exploration_3d.git
-else
-  cd turtlebot_exploration_3d
-  git pull
-  cd -
-fi
-sudo apt install ros-melodic-move-base-msgs
-
