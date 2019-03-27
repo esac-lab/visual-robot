@@ -7,12 +7,9 @@ sudo apt install curl git -y
 curl -sLf https://raw.githubusercontent.com/gaunthan/zed-sdk-installer/master/installer.sh | bash
 
 # Install zed-ros-wrapper
-cd ../src
+cd ./src
 if [ ! -d zed-ros-wrapper ]; then
     git clone https://github.com/stereolabs/zed-ros-wrapper.git
 else
     git pull
 fi
-cd ../
-catkin_make
-source ./devel/setup.bash

@@ -34,7 +34,7 @@ sudo make install
 cd "$curr_dir"
 
 # Install ORB_SLAM2
-cd ../src
+cd ./src
 if [ ! -d ORB_SLAM2 ]; then
     git clone https://github.com/gaunthan/ORB_SLAM2
 else

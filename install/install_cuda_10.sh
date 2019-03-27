@@ -8,6 +8,7 @@ DOWNLOAD_URL="https://developer.download.nvidia.com/compute/cuda/repos/ubuntu180
 DEB_FILE="/tmp/cuda-repo-ubuntu1804_10.0.130-1_amd64.deb"
 KEY_URL="https://developer.download.nvidia.com/compute/cuda/repos/ubuntu1804/x86_64/7fa2af80.pub"
 
+cd /tmp
 wget $DOWNLOAD_URL -O $DEB_FILE
 sudo dpkg -i $DEB_FILE
 sudo apt-key adv --fetch-keys $KEY_URL
