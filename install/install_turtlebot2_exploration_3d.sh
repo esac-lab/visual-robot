@@ -9,4 +9,9 @@ else
   git pull
   cd -
 fi
-sudo apt install ros-melodic-move-base-msgs
+
+# Install dependencies
+sudo apt install -y ros-melodic-move-base-msgs ros-melodic-openni2-launch
+
+git clone https://github.com/robotics-in-concert/rocon_app_platform
+git clone https://github.com/robotics-in-concert/rocon_tools.git
