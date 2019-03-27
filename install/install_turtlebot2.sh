@@ -4,6 +4,6 @@ curl -sLf https://raw.githubusercontent.com/gaunthan/Turtlebot2-On-Melodic/maste
 
 # Install turtlebot exploration 3d
 cd ./src
-https://github.com/gaunthan/turtlebot_exploration_3d.git
+git clone https://github.com/gaunthan/turtlebot_exploration_3d.git
 sudo apt install ros-melodic-move-base-msgs
 
