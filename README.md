@@ -1,5 +1,5 @@
 # visual-robot
-Building visual robot with ORB_SLAM2, ZED and Turtlebot2 on Ubuntu melodic.
+Building visual robot with ORB_SLAM2, ZED (or Kinect V1) and Turtlebot2 on Ubuntu melodic.
 
 ## System requirements
 
